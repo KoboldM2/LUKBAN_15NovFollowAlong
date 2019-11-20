@@ -38,11 +38,11 @@ public class DBHelper extends SQLiteOpenHelper {
         cv.put(col4, sec);
         long isInserted = db.insert(table,null, cv);
         if(isInserted == -1) {
-            Toast.makeText(this,"failed to insert data", Toast.LENGTH_LONG).show();
+            //Toast.makeText(this,"failed to insert data", Toast.LENGTH_LONG).show();
             return false;
         }
         else {
-            Toast.makeText(this,"inserted data", Toast.LENGTH_LONG).show();
+            //Toast.makeText(this,"inserted data", Toast.LENGTH_LONG).show();
             return true;
         }
     }
